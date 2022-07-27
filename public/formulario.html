@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Cargando estilos -->
+        <link rel="stylesheet" href="./styles.css" />
+
+        <!-- Descarga de fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>Tablas</title>
+
+    </head>
+    <body class="layout_main-page">
+
+        <header class="header">
+            <nav class="navbar">
+                <a href="./index.html" class="link">Home</a>
+                <a href="./formulario.html" class="link">Formulario</a>
+                <a href="./tabla.html" class="link">Tabla</a>
+            </nav>
+        </header>
+
+        <main class="main_content">
+
+            <form class="contact-information">
+                <h4 class="form_title">Informacion de contacto</h4>
+
+                <label class="input_title">Nombre Completo</label>
+                <input id="nombre" class="input_text" autocomplete="off" type="text" placeholder="Su nombre..." />
+
+                <label class="input_title">E-mail</label>
+                <input id="email" class="input_text" autocomplete="off" type="text" placeholder="E-mail..." />
+
+                <label class="input_title">Telefono</label>
+                <input id="telefono" class="input_text" autocomplete="off" type="number" placeholder="Su telefono..." />
+
+                <label class="input_title">Descripción</label>
+                <textarea id="descripcion" class="input_text"></textarea>
+
+                <span class="form-buttons">
+                    <input id="subir" class="submit_button" type="submit" value="Enviar" />
+                    <input class="submit_button_secondary" type="reset" value="Limpiar" />
+                </span>
+            </form>
+
+        </main>
+
+        <footer id="contacto" class="contact">
+            <h3 class="footer_title">Datos del estudiante</h3>
+
+            <span class="student_data"> <b>Nombres:</b> Edgardo Andres </span>
+            <span class="student_data"> <b>Apellidos:</b> Caña Carrasquel </span>
+            <span class="student_data"> <b>Cedula:</b> 27.748.377 </span>
+
+        </footer>
+
+        <!-- Script de javascript -->
+        <script src="./scripts/formulario.js"></script>
+    </body>
+</html>
