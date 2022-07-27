@@ -1,10 +1,10 @@
 const tabla = document.querySelector('#tabla_interna');
-const url = 'https://empleax-app.herokuapp.com/' + 'api/contactos';
+
 console.log(tabla);
 
 const receiveData = async ()=>{
     
-    const resp = await fetch(url, {
+    const resp = await fetch('http://localhost:4000/api/contactos', {
         method:'GET',
         headers:{
             'Content-Type': 'application/json'

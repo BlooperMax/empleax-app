@@ -1,0 +1,3 @@
+para ejecutar esta pagina, se necesita tener instalado node.js, ademas se uso como base
+de datos MongoDB, esta pagina para ejecutarse se debe hacer desde la linea de comandos 
+con "npm run dev"

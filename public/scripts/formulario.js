@@ -3,7 +3,6 @@ const email = document.querySelector('#email');
 const telefono = document.querySelector('#telefono');
 const descripcion = document.querySelector('#descripcion');
 const button = document.querySelector('#subir');
-const url = 'https://empleax-app.herokuapp.com' + '/api/nuevo';
 
 const sendData = async (e)=>{
     
@@ -16,7 +15,7 @@ const sendData = async (e)=>{
         descripcion:descripcion.value,
     }
 
-    const resp = await fetch(url, {
+    const resp = await fetch('http://localhost:4000/api/nuevo', {
         method:'POST',
         headers:{
             'Content-Type': 'application/json'
